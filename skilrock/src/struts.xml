@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD  
+Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+
+<struts>
+
+<package name="default" namespace="/" extends="struts-default">
+	<action name="playerRegister" class="varun.action.PlayerRegisterAction">
+		<result name="success">player-register-success.jsp</result>
+		<result name="error">player-register-error.jsp</result>
+	</action>
+	<action name="playerLogin" class="varun.action.PlayerLoginAction">
+		<result name="success">player-login-success.jsp</result>
+		<result name="error">player-login-error.jsp</result>
+	</action>
+	<action name="officerRegister" class="varun.action.OfficerRegisterAction">
+		<result name="success">officer-register-success.jsp</result>
+		<result name="error">officer-register-error.jsp</result>
+	</action>
+	<action name="officerLogin" class="varun.action.OfficerLoginAction">
+		<result name="success">officer-login-success.jsp</result>
+		<result name="error">officer-login-error.jsp</result>
+	</action>
+	<action name="viewplayers" class="varun.action.ShowAllPlayerAction">
+		<result name="success">show-all-player.jsp</result>
+	</action>
+	<action name="updateOfficerInfo" class="varun.action.UpdateOfficerInfoAction">
+		<result name="success">update-officer-info-success.jsp</result>
+	</action>
+	<action name="updatePlayerInfo" class="varun.action.UpdatePlayerInfoAction">
+		<result name="success">update-player-info-success.jsp</result>
+	</action>
+</package>
+
+</struts>
